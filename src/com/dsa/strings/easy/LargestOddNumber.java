@@ -1,0 +1,37 @@
+package com.dsa.strings.easy;
+
+public class LargestOddNumber {
+
+    public static void main(String[] args) {
+
+        String s = "4206";
+
+        System.out.println(largestOddNumber(s));
+
+    }
+
+    public static String largestOddNumber(String num) {
+
+        int index = -1;
+
+        for (int i = num.length() - 1; i >= 0; i--) {
+            if ((num.charAt(i) - '0') % 2 == 1) {
+                index = i;
+                break;
+            }
+        }
+
+        if (index == -1) {
+            return "";
+        }
+
+        int i = 0;
+        while (i <= index && num.charAt(i) == '0') {
+            i++;
+
+        }
+        return num.substring(i, index + 1);
+
+    }
+
+}
