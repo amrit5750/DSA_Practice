@@ -1,6 +1,8 @@
 package com.dsa.LinkedList;
 
-public class LinkedList {
+import java.util.Queue;
+
+public class LinkedList implements Queue<Integer> {
 
     public static void main(String[] args) {
 
