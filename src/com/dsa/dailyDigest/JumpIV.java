@@ -2,11 +2,10 @@ package com.dsa.dailyDigest;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Queue;
-
-import com.dsa.LinkedList.LinkedList;
 
 public class JumpIV {
     public static void main(String[] args) {
@@ -20,7 +19,7 @@ public class JumpIV {
         Map<Integer, List<Integer>> map = new HashMap<>();
 
         boolean[] visited = new boolean[arr.length];
-        Queue<Integer> queue = new LinkedList();
+        Queue<Integer> queue = new LinkedList<>();
 
         for (int i = 0; i < arr.length; i++) {
             map.computeIfAbsent(arr[i], k -> new ArrayList<>()).add(i);
@@ -68,7 +67,6 @@ public class JumpIV {
         }
 
         return -1;
-
     }
 
 }
