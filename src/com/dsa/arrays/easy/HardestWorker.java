@@ -1,8 +1,5 @@
 package com.dsa.arrays.easy;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class HardestWorker {
 
     public static void main(String[] args) {
